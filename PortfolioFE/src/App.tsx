@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
-import Blog from "./pages/Blog";
+import ProjectConfiguration from "./pages/ProjectConfiguration";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AboutMe />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/portfolio-config" element={<ProjectConfiguration/>} />
       </Routes>
     </BrowserRouter>
   );

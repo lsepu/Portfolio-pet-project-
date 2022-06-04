@@ -3,10 +3,10 @@ import ProjectList from "../components/ProjectList";
 
 const Portfolio = () => {
   return (
-    <>
-      <h1>Lista de projectos</h1>
+    <div style={{padding: "20px", textAlign: "center"}}>
+      <h1>Project list</h1>
       <ProjectList />
-    </>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface IProject {
-  id: number;
+  id: string;
   name: string;
   description: string;
   img: string;
@@ -9,13 +9,13 @@ interface IProject {
 
 const initialState: IProject[] = [
   {
-    id: 1,
+    id: "1",
     name: "first project",
     description: "project description",
     img: "project url img",
   },
   {
-    id: 2,
+    id: "2",
     name: "second project",
     description: "project description",
     img: "project url img",
