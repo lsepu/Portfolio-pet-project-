@@ -3,11 +3,19 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 interface IUser {
-    user: string
+    user: userState
 } 
 
 const initialState : IUser = {
-    user: "",
+    user: {
+      email: "",
+      displayName: ""
+    },
+}
+
+interface userState {
+  email: string;
+  displayName: string;
 }
 
 export const userSlice = createSlice({
@@ -18,7 +26,10 @@ export const userSlice = createSlice({
       state.user = action.payload;
     },
     logout: (state) => {
-      state.user = "";
+      state.user = {
+        email: "",
+        displayName: ""
+      };
     },
   },
 });
